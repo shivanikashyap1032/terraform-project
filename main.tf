@@ -62,12 +62,3 @@ module "alb" {
   frontend_target_group_name = var.frontend_target_group_name
   frontend_instances_ids     = module.ec2_instances.frontend_instances_ids
 }
-
-terraform {
-  backend "s3" {
-    bucket         = "cloudcontainers-terraform-state-1"
-    key            = "terraform.tfstate"
-    region         = "ap-south-1"
-   
-  }
-}
