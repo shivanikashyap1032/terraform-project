@@ -85,12 +85,5 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            echo 'Pipeline completed.'
-            // Optionally, add any cleanup or notification steps here
-        }
-    }
 }
 
